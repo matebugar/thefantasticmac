@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jQuery Basic 1</title>
+	<link rel="stylesheet" href="">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<p>P element</p>
+	<p id="intro">P element with ID</p>
+	<p class="note">P element</p>
+	<p>P element</p>
+	<p class="note">P element</p>
+
+	<article>
+		<p><a href="https://github.com/">P element in article</a></p>
+		<p>P element in article</p>
+		<p>P element in article</p>
+	</article>
+
+	<ul>
+		<li>First list item</li>
+		<li>Second list item</li>
+		<li>Third list item</li>
+	</ul>
+
+	<script>
+	$(document).ready(function(){
+		$("*");
+		$("p");
+		$("p#intro");
+		$(".note");
+		$("div.note");
+		$("article p");			
+		$("p:last");
+		$("p:first");
+		$("[href]");
+		$("ul li:eq(1)");
+		$("p:nth-child(1)");
+		$("p:nth-child(2)");
+});
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jQuery Day 1</title>
+	<link rel="stylesheet" href="">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<p class="nosee">Hello World!</p>
+	<p class="reveal">Hello You!</p>
+
+	<script>
+		$(".nosee").hide();
+		$(".reveal").hide().show(2000).delay(2000).slideUp(2000);
+	</script>
+</body>
+</html>
